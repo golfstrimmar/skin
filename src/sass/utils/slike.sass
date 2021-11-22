@@ -1,0 +1,178 @@
+
+
+
+.slike-uno
+		margin:  0 auto
+		position:  relative
+		margin-bottom:  100px
+		.slike-arrow
+			position: relative
+			position: absolute
+			top: 50%
+			transform: translate(0%, -50%)
+			z-index: 2
+			width: 38px
+			height: 38px
+			background: slategrey
+			border-radius: 50%
+			/*display: flex;*/
+			/*justify-content: center;*/
+			/*align-items: center;*/
+			transition: all 0.2s ease-in-out
+			cursor: pointer
+
+		.slike-arrow:hover
+			background: #a1a1a1
+
+		.slike-arrow:hover svg
+			stroke: white
+			stroke-width: 5px
+
+		.slike-arrow svg
+			width: 20px
+			height: 20px
+			stroke: midnightblue
+			stroke-width: 3px
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: 200
+			transition: all 0.2s ease-in-out
+
+
+		.slike-arrow-left
+			left: -40px
+
+
+		.slike-arrow-right
+			right: -40px
+
+
+@media  (max-width: 1350px)
+	.slike-uno
+			.slike-arrow
+				top: 110%
+			.slike-arrow-left
+				left: 40px
+			.slike-arrow-right
+				right: 40px
+
+
+
+
+
+
+
+
+//=============================================
+
+.slike
+	margin:  0 auto
+	position:  relative
+
+
+.slike__container
+	overflow: hidden
+
+
+
+.slike__track
+	transition: all 2s ease-in-out
+	position: relative
+	display: flex
+	width: 100%
+	height: 300px
+	justify-content: space-between
+
+
+
+.slike__item
+	position: relative
+
+.slike__item a
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 20
+
+
+.slike__item h2
+	position: relative
+	z-index: 2
+	color: crimson
+	font-size: 40px
+
+
+.slike__item .imgs
+	/*width: 300px;*/
+	/*width: 100%;*/
+
+
+.slike-arrow
+	position: relative
+	position: absolute
+	top: 50%
+	transform: translate(0%, -50%)
+	z-index: 2
+	width: 38px
+	height: 38px
+	background: slategrey
+	border-radius: 50%
+	/*display: flex;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	transition: all 0.2s ease-in-out
+	cursor: pointer
+
+.slike-arrow:hover
+	background: #a1a1a1
+
+.slike-arrow:hover svg
+	stroke: white
+	stroke-width: 5px
+
+.slike-arrow svg
+	width: 20px
+	height: 20px
+	stroke: midnightblue
+	stroke-width: 3px
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 200
+	transition: all 0.2s ease-in-out
+
+
+.slike-arrow-left
+	left: -40px
+
+
+.slike-arrow-right
+	right: -40px
+
+
+
+@media  (max-width: 1350px)
+	.slike-arrow
+		top: 110%
+	.slike-arrow-left
+		left: 40px
+	.slike-arrow-right
+		right: 40px
+
+
+
+
+@media (max-width: 767px)
+	.slike__item
+		flex: 1 0 100%!important
+    
+
+
+//===================================================
+
+

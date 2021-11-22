@@ -1,0 +1,47 @@
+section#formSection.formSection
+        .container
+                .form.feedback
+                    .form__item
+                        input(type="text" name="name" placeholder="Denzel Washington" )._name._req
+                        label(for='name') What is your name?
+                    .form__item
+                        input(type="phone" name="phone" placeholder="+7 983 358 25-20")._phone._req
+                        label(for='email') What is your email?
+                    //.form__item
+                       textarea#message(type='text' required='' placeholder=' Your awesome         message' cols=' 40' rows='6')
+                        label(for='message') Write your message
+                    //.form__item.contacts__file-add
+                    //    input#customFile.custom-file-input(type='file')
+                    //    label.name__text(for='customFile') Add "attachment
+                    //    .custom-file
+                    .form__item
+                        input.submit-button.btn.btn--success(type='submit'  placeholder="Send message")
+                    .loader
+                        .loader__items
+                            .loader__item
+                            .loader__item
+                            .loader__item
+                        p.loader__name Отправка...
+
+
+
+
+//.container
+//        form#feedback-6.block-6-form__body(action="#" ).feedback
+//            .block-6-form__item
+//                label._f-12._w-600._28   Введите Ваше имя:
+//                    input(type="text" name="name" placeholder="Алексей" ).block-6-form__input._name._req
+//            .block-6-form__item
+//                label._f-12._w-600._28   Введите Ваш номер телефона:
+//                    input(type="phone" name="phone" placeholder="+7 983 358 25-20").block-6-form__input._phone._req
+//            .block-6-form__item
+//                input(type="submit" placeholder="Заказать звонок").btn.btn--success.block-6-form__button._f-12._w-700._2f
+//            .block-6-form__politic
+//                input#cbform(type='checkbox')._req
+//                label(for='cbform')._f-10._w-400._39 Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+//            .loader
+//                .loader__items
+//                    .loader__item
+//                    .loader__item
+//                    .loader__item
+//                p.loader__name Отправка...

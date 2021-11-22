@@ -1,0 +1,38 @@
+header.header
+    .container
+        .header__body
+            a(href="#!").header__logo
+                //img(src='/assets/img/logo.svg')
+                img(data='assets/img/logo.svg', alt='img')
+                span Nauja Oda
+            nav.header__menu.menu
+                i.header__close
+                    svg
+                        use(xlink:href='/assets/img/sprite.svg#close')
+                ul.menu__list
+                    li.menu__item
+                        a.menu__link(href="#!" rel="#bunner").button-scroll Pradžia
+                    li.menu__item
+                        a.menu__link(href="#!" rel="#posts").button-scroll E-shop
+                    li.menu__item
+                        a.menu__link(href="#!" rel="#galery").button-scroll Dovanų kuponai
+                    li.menu__item
+                        a.menu__link(href="#!" rel="#galery").button-scroll Paslaugos
+                    li.menu__item
+                        a.menu__link(href="#!" rel="#galery").button-scroll Procedūrų kainos
+                    li.menu__item
+                        a.menu__link(href="#!" rel="#galery").button-scroll Kontaktai
+
+
+            .header__info.info
+                a(href="#!").info__login Login
+                .info__decor
+                a(href="#!").info__cart.info-cart
+                    svg
+                        use(xlink:href='/assets/img/sprite.svg#cart')
+                    span.info-cart__sum 1
+
+            i.header__burger
+                svg
+                    use(xlink:href='/assets/img/sprite.svg#burger')
+

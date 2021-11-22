@@ -1,0 +1,41 @@
+.slider
+	.container
+		position: relative
+
+.slider__wrapper
+	overflow: hidden
+
+.slider__body
+
+.slider__item
+	position: relative
+	min-height: 200px
+.content-slider-arrow
+	position: absolute
+	top:    50%
+	transform: translate(0%, -50%)
+	z-index: 2
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	border: 1px solid #333638
+	svg
+		stroke: #2f2e2e
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 20px
+		height:  20px
+		transform: translate(-50%, -50%)
+		z-index: 2
+		stroke-width: 2px
+		transition: all .2s ease-in-out
+.content-slider-arrow:hover
+	svg
+		stroke-width: 5px
+		stroke: $active
+
+.content-slider-prev
+	left: -40px
+.content-slider-next
+	right: -40px

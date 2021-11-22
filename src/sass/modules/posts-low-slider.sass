@@ -1,0 +1,51 @@
+.posts-low
+	.slick-slide
+		margin: 0 20px
+	.posts__body
+		margin: 0 -20px
+	.slick-arrow
+		top: auto
+		bottom: -70px
+		z-index: 20
+		transform: translateY(0)
+	.slick-prev
+		left: auto
+		right: 100px
+	.slick-next
+		right: 20px
+	.slick-dots
+		position: absolute
+		bottom: -30px
+		left: 50%
+		width: 100%
+		transform: translateX(-50%)
+		+jucc
+		li
+			margin: 0 5px
+			font-size: 0
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background: $active
+			transition: all 0.2s ease-in-out
+			&:hover
+				cursor: pointer
+				background: lighten($active, 30%)
+		li.slick-active
+			background: transparent
+			border: 3px solid $active
+
+@media (max-width: 1199px)
+	#posts-low
+		.slick-arrow
+			width: 30px
+			height: 30px
+			bottom: -50px
+			&:after
+				font-size: 15px
+				width: 15px
+				height: 15px
+		.slick-prev
+			left: auto
+			right: 70px
+

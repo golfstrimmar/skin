@@ -1,0 +1,64 @@
+section#posts-num.posts-num
+  .container
+    h2._f-1 Слайдер -- стрелки и номера.
+    .posts__body
+      .slider
+          .num-slick-prev.slick-arrow.slick-prev
+            svg
+              use(xlink:href='/assets/img/sprite.svg#arrow-left')
+          .num-slick-next.slick-arrow.slick-next
+            svg
+              use(xlink:href='/assets/img/sprite.svg#arrow-right')
+          .slider-js-posts-num
+            .posts__item.object-card
+              .object-card__img.imgs
+                picture
+                  source(srcset="assets/img/p.jpg" type="image/jpg"  media="(min-width: 1200px)")
+                  source(srcset="assets/img/img-2.png" type="image/png"  media="(min-width: 1000px) and (max-width: 1199px)")
+                  source(srcset="assets/img/busic.gif" type="image/gif"  media="(max-width: 999px)")
+                  img(src='assets/img/p.jpg', alt='img')
+              .object-card__body
+                .object-card__title
+                  h3._f-4 Заголовок1
+                .object-card__text._f-5 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui deserunt, fugiat placeat officiis nostrum quis cum ea non,
+                .object-card__button
+                  a(href='#!').btn.btn--success more
+            .posts__item.object-card
+              .object-card__img.imgs
+                picture
+                  source(srcset="assets/img/img-2.png" type="image/jpg"  media="(min-width: 1200px)")
+                  source(srcset="assets/img/p.jpg" type="image/png"  media="(min-width: 1000px) and (max-width: 1199px)")
+                  source(srcset="assets/img/busic.gif" type="image/gif"  media="(max-width: 999px)")
+                  img(src='assets/img/img-2.png', alt='img')
+              .object-card__body
+                .object-card__title
+                  h3._f-4 Заголовок2
+                .object-card__text._f-5 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui deserunt, fugiat placeat officiis nostrum quis cum ea non,
+                .object-card__button
+                  a(href='#!').btn.btn--success more
+            .posts__item.object-card
+              .object-card__img.imgs
+                picture
+                  source(srcset="assets/img/busic.gif" type="image/jpg"  media="(min-width: 1200px)")
+                  source(srcset="assets/img/p.jpg" type="image/png"  media="(min-width: 1000px) and (max-width: 1199px)")
+                  source(srcset="assets/img/img-2.png" type="image/gif"  media="(max-width: 999px)")
+                  img(src='assets/img/busic.gif', alt='img')
+              .object-card__body
+                .object-card__title
+                  h3._f-4 Заголовок3
+                .object-card__text._f-5 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui deserunt, fugiat placeat officiis nostrum quis cum ea non,
+                .object-card__button
+                  a(href='#!').btn.btn--success more
+            .posts__item.object-card
+              .object-card__img.imgs
+                picture
+                  source(srcset="assets/img/busic.gif" type="image/jpg"  media="(min-width: 1200px)")
+                  source(srcset="assets/img/p.jpg" type="image/png"  media="(min-width: 1000px) and (max-width: 1199px)")
+                  source(srcset="assets/img/img-2.png" type="image/gif"  media="(max-width: 999px)")
+                  img(src='assets/img/busic.gif', alt='img')
+              .object-card__body
+                .object-card__title
+                  h3._f-4 Заголовок4
+                .object-card__text._f-5 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui deserunt, fugiat placeat officiis nostrum quis cum ea non,
+                .object-card__button
+                  a(href='#!').btn.btn--success more

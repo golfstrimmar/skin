@@ -1,0 +1,32 @@
+.up_down_btn
+  position: fixed
+  background: -o-linear-gradient(357.31deg, #DEF1D7 0, $active 100%)
+  background: linear-gradient(92.69deg, #DEF1D7, $active)
+  right: 20px
+  bottom: 20px
+  padding: 7px
+  border-radius: 50%
+  cursor: pointer
+  display: none
+  z-index: 200
+  opacity: .5
+  transition: all 0.5s
+  color: white
+  font-size: 20px
+  font-weight: bold
+
+  &:hover
+    text-decoration: none
+    opacity: 1
+
+  &-show
+    display: block
+
+  &-disabled
+    pointer-events: none
+    cursor: default
+    opacity: 0
+
+  @media (min-width: 0px) and (max-width: 768px)
+    &
+      display: none

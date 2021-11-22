@@ -1,0 +1,74 @@
+.btn
+  border: 1px solid transparent
+  outline: none!important
+  transition: all 0.2s ease-in-out
+  diplay: inline-block
+  +center
+
+.btn--success
+      color: white
+      background: $active
+      &:hover
+        background: lighten($active,30%)
+        border: 1px solid darken($active,10%)
+        box-shadow: 0px 0px 20px lighten($active,60%)!important
+        color: lighten($active,10%)
+      &:focus
+        border: 1px solid darken($active,10%)
+        background: lighten($active,10%)
+        box-shadow: 0px 0px 20px lighten($active,60%)!important
+        color: white
+
+.btn--empty
+  background: white
+  border: 1px solid $active
+  &:hover
+    background: lighten($active,30%)
+    border: 1px solid darken($active,10%)
+    box-shadow: 0px 0px 20px lighten($active,60%)!important
+    color: lighten($active,10%)
+  &:focus
+    border: 1px solid darken($active,10%)
+    background: lighten($active,10%)
+    box-shadow: 0px 0px 20px lighten($active,60%)!important
+    color: white
+
+
+
+.btn--light,.btn--cross
+  i
+    margin: 0 0 0 0
+    font-size: 20px
+  &:hover
+    background: lighten($active,30%)
+    border: 1px solid darken($active,10%)
+    box-shadow: 0px 0px 20px lighten($active,60%)!important
+    color: lighten($active,10%)
+  &:focus
+    border: 1px solid darken($active,10%)
+    background: lighten($active,10%)
+    box-shadow: 0px 0px 20px lighten($active,60%)!important
+    color: white
+    &>span
+      color: white
+
+
+   
+.btn--success-icon
+  i
+    margin: 0 14px 0 0
+    font-size: 20px
+  span
+      margin: 0 0 0 0
+  &:hover
+    i, span
+      color: lighten($active,10%)
+      
+  &:focus
+    i, span
+      color: white
+  
+
+
+ 
+

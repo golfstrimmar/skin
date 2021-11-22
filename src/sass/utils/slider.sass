@@ -1,0 +1,105 @@
+
+.slider
+  position: relative
+  +pro
+  .slider__body
+    height: 100%
+  .slick-slide
+
+
+  .slick-arrow
+    position: relative
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 20
+    border-radius: 50%
+    transition: all 0.2s ease-in-out
+    width: 50px
+    height: 50px
+    background: #fff
+    border: 1px solid #242424
+    svg
+      position: absolute
+      width: 20px
+      height: 20px
+      top: 50% 
+      left: 50%
+      z-index: 22
+      transform: translate(-50%,-50%)
+      transition: all 0.1s ease-in-out
+      stroke: #242424
+      stroke-width: 3px
+    &:hover
+      cursor: pointer
+      border: none
+      background: lightgrey
+      svg
+        stroke: white
+        stroke-width: 5px
+  .slick-prev
+    left: -67px
+  .slick-next
+    right: -67px
+
+
+  
+
+
+
+
+
+
+
+
+
+// .slick-dots li:not(.slick-active)
+//     display: none
+// .slick-active
+//     z-index: 2
+//     display: inline-flex
+//     +absolute( 71px, 38px, null, null, 10px,0,0)
+//     bottom:  10px
+
+// .slick-dots-current
+//     font-weight: normal
+//     font-size: 15px
+//     color: white
+//     margin: 0 0 0 
+// .slick-dots-total
+//     font-weight: normal
+//     color: white
+//     font-size: 15px
+//     margin: 0 0 0 
+// .slick-dots-separator
+//     color: white
+//     font-size: 15px
+//     font-weight: normal
+//     margin: 0 5px
+// .slick-dots-button
+//     +center 
+//     background: transparent
+//     width: 71px
+//     height: 38px
+//     border-radius: 10px
+//     background: rgba(24,24,24, .6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

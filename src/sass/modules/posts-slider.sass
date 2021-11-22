@@ -1,0 +1,31 @@
+.posts
+  margin: 100px 0 0 0
+  
+
+.posts
+  .slick-slide
+    margin: 0 20px
+  .posts__body
+    margin: 0 -20px
+  .slick-dots
+    position: absolute
+    bottom: -30px
+    left: 50%
+    width: 100%
+    transform: translateX(-50%)
+    +jucc
+    li
+      margin: 0 5px
+      font-size: 0
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: $active
+      transition: all 0.2s ease-in-out
+      &:hover
+        cursor: pointer
+        background: lighten($active, 30%) 
+    li.slick-active
+        background: transparent
+        border: 3px solid $active
+

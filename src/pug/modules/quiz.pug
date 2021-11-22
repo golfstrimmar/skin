@@ -1,0 +1,88 @@
+section#quiz.quiz
+    .container
+        .quiz__body
+            .quiz__top
+                .quiz__pre-title._f-14._w-500   Пройдите наш бесплатный опрос
+                .quiz__title
+                    h2._f-30._w-700 Ответьте всего на несколько вопросов, <br> и вы узнаете приблизительную стоимость<br> своего будущего дома.
+                .quiz__img
+                    .imgs
+
+            .quiz__bar.Quiz-bar
+                .Quiz-bar__track
+
+
+            .quiz__content.QContent
+                .QContent__column
+
+                    .QBlock.QBlock-active
+                        .QContent__title
+                            h3._f-30._w-700
+                                span 01.
+                                span Из какого материала вы планируете строить дом?
+
+
+                    .QBlock
+                        .QContent__bedroom.QContent-bedroom
+                            .QContent__title
+                                h3._f-30._w-700   02. Количество спален
+
+
+                    .QBlock
+                        .QContent__levels.QContent-levels
+                            .QContent__title
+                                h3._f-30._w-700 03. Количество этажей
+
+
+
+                    .QBlock
+                        .QContent__levels.QContent-levels
+                            .QContent__title
+                                h3._f-30._w-700 04. На какой бюджет вы рассчитываете?
+
+
+
+                    .QBlock.block-6-form__body
+                        .block-6-form__item
+                            label._f-12._w-600._28
+                                | Введите Ваше имя:
+                                input.block-6-form__input(type='text' placeholder='Алексей')
+                        .block-6-form__item
+                            label._f-12._w-600._28
+                                | Введите Ваш номер телефона:
+                                input.block-6-form__input(type='phone' placeholder='+7 983 358 25-20')
+                        .block-6-form__item
+                            a.btn.btn--success.block-6-form__button(href='#!')
+                                span._f-12._w-700._2f заказать звонок
+                        .block-6-form__politic
+                            svg
+                                use(xlink:href='/assets/img/sprite.svg#bird')
+                            span._f-10._w-400._39
+                                | Нажимая на кнопку, Вы даете свое согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+
+
+
+
+                .QContent__person.Person
+                    .Person__img
+                        .imgs
+                            img(data-src='assets/img/block-2/person.webp', alt='img')
+                    .Person__name._f-18._w-700 Алексей Алексеевич
+                    .Person__profession._f-14._w-500 Ведущий архитектор
+                    .Person__description._f-14._w-400 Здравствуйте меня зовут Алексей, и я помогу вам понять какой бюджет нужен для строительства дома под ключ
+                    .Person__devider
+                    .Person__resive._f-12._w-500 ответив на вопросы вы получите:
+                    .Person__cards
+                        .Person__card.Person-card
+                            .imgs
+
+                            .Person-card__text._f-11._w-600 Орентировочную стоимость строительства
+                        .Person__card.Person-card
+                            .imgs
+                            .Person-card__mask
+                            .Person-card__text._f-11._w-600  Точную подборку<br> проектов
+
+                .QContent__block-button
+                    button.btn.btn--success.QContent__button._f-15._w-700.Q-js
+                        span Следуюший вопрос
+                    span._f-12._w-400 Жмите на кнопку что бы узнать<br> предварительную стоимость

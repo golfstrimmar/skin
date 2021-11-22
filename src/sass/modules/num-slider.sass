@@ -1,0 +1,67 @@
+.posts-num
+	margin: 100px 0 0 0
+	.slick-slide
+		margin: 0 20px
+	.posts__body
+		margin: 0 -20px
+	.slick-arrow
+		top: auto
+		bottom: -10px
+		z-index: 20
+		transform: translateY(0)
+	.slick-prev
+		left: auto
+		right: 250px
+	.slick-next
+		right: 180px
+
+	.slick-dots
+		margin: 50px 20px 0px auto
+		width: 71px
+		height: 38px
+		z-index: 4
+		position: relative
+
+	.slick-dots li:not(.slick-active)
+		display: none
+	.slick-active
+		z-index: 2
+		width: 71px
+		height: 38px
+		border: none
+
+	.slick-dots-current
+		font-weight: normal
+		font-size: 15px
+		color: white
+		margin: 0 0 0
+	.slick-dots-total
+		font-weight: normal
+		color: white
+		font-size: 15px
+		margin: 0 0 0
+	.slick-dots-separator
+		color: white
+		font-size: 15px
+		font-weight: normal
+		margin: 0 5px
+	.slick-dots-button
+		+center
+		background: transparent
+		width: 71px
+		height: 38px
+		border-radius: 10px
+		background: rgba(24,24,24, .6)
+
+
+@media (max-width: 1199px)
+	#posts-low
+		.slick-arrow
+			width: 30px
+			height: 30px
+			bottom: -50px
+			&:after
+				font-size: 15px
+				width: 15px
+				height: 15px
+

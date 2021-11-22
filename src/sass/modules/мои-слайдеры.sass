@@ -1,0 +1,124 @@
+.galery-slider
+	margin: 50px 0 0 0
+.galery
+	height: 135px!important
+	display: flex
+	transition: all 1s linear
+
+.galery-slider__body
+	overflow: hidden
+	max-width: 627px
+	border: 1px solid rebeccapurple
+	margin: 0 auto
+
+.galery__item
+	position: relative
+	min-width: 210px
+	height: 135px!important
+	a
+		position: absolute
+		z-index: 50
+		top: 0
+		left: 0
+		+pro
+
+	.imgs
+		border-radius: 5px
+		width: 190px
+
+
+
+	//-------------
+
+
+
+#galery-fade
+	.slider
+		position: relative
+		+pro
+		min-height: 440px
+
+	.slider-posts
+		position: relative
+
+
+	.posts__item
+		position: relative
+		position: absolute
+		top: 0
+		left: 0
+		+pro
+		transition: all  .4s ease-in-out
+		a
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 2
+
+
+
+
+
+
+
+	.slider-arrow
+		position: relative
+		position: absolute
+		top: 50%
+		z-index: 20
+		border-radius: 50%
+		background-color: #ebebeb
+		width: 38px
+		height: 38px
+		transform: translate(0%, -50%)
+		cursor: pointer
+		svg
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: 2
+			width: 14px
+			height: 14px
+			stroke: #2f2e2e
+			stroke-width: 3px
+			transition: all .2s ease-in-out
+
+		&:hover
+			svg
+				stroke: white
+				stroke-width: 5px
+
+
+	//--------------
+	.posts-prev-1
+		left: -54px
+
+	.posts-next-1
+		right: -54px
+
+	.posts-item__img
+		min-height: 440px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
