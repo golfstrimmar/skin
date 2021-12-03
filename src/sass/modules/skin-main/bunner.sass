@@ -1,0 +1,156 @@
+
+
+
+.bunner-slider
+  min-height: 100vh
+  overflow: hidden
+  .slider,.slider__body,.slider__item
+    min-height: 100vh
+  .slider
+    position: relative
+  .slider__body
+    +pro
+  .slider__item
+    position: relative
+    +pro
+  .slider-card
+    position: relative
+  .slider-card__img
+    z-index: 1
+    +pro
+    position: absolute
+    top: 0
+    left: 0
+    min-height: 100vh
+  .slider-card__body
+    +fdc
+    padding: 276px 0 0
+    position: relative
+    z-index: 5
+
+  .slider-card__title
+    h2
+        line-height: 1.2
+        font-weight: 500
+
+
+
+  .slider-card__button
+    width: 280px
+    height: 70px
+    border-radius: 10px
+    letter-spacing: 2.5px
+    margin: 45px 0 0 0
+
+
+    
+  .swiper-pagination
+    position: absolute
+    left: calc((100vw - 1240px)/2)
+    display: inline-block
+    width: auto
+    bottom: 22%
+    z-index: 100
+
+    span
+      width: 15px
+      height:  15px
+      border: 1px solid white
+      background: transparent
+      opacity: 1
+      transition: all .2s ease-in-out
+      margin: 0 10px 0 0!important
+      &:last-child
+        margin: 0 0 0 0!important
+
+
+    span.swiper-pagination-bullet-active
+      background: white
+
+.bunner-search
+    position: relative
+    width: 527px
+    position: absolute
+    left: 50%
+    bottom: 50px
+    transform: translate(-50%, 0)
+    z-index: 100
+    input
+      color: white
+      border-bottom: 1px solid white
+      height: 48px
+      padding: 0 0 0 10px
+
+      &::placeholder
+        color: white
+        font-size: 20px
+        font-weight: 700
+        font-family: 'Cormorant Garamond', serif
+    button
+      width: 20px
+      height:  20px
+      position: absolute
+      right: -7px
+      top: 39%
+      transform: translate(-20px, -50%)
+      svg
+        fill: white
+        +pro
+
+
+.rec
+  margin: 30px 0 0 0
+.rec__wrapper
+  background: #B692B7
+  min-height: 313px
+  position: relative
+  +alic
+
+.rec__img
+  position: absolute
+  height: 313px
+  width: 470px
+  right: 5px
+  top: 0
+  margin: 0 110px 0 auto
+
+
+.rec__text
+  text-align: center
+  padding: 0 0 0 58px
+  p
+    line-height: 1.45
+    white-space: nowrap
+    letter-spacing: .04rem
+
+.slider--1
+  position: relative
+  .content-slider-arrow
+    left: 100px
+    top: 115%
+    width: 61px
+    height: 61px
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.1)
+    border: none
+    svg
+      stroke: $active
+  .content-slider-next
+    left: 177px
+    transform: rotate(180deg) translateY(+50%)
+
+
+
+//
+//@media (min-width: 500px) and (max-width: 999px)
+//  .bunner-slider
+//    .slider-card__body
+//      padding: 200px 10px
+//      min-height: 100vh
+//@media (max-width: 500px)
+//  .bunner-slider
+//    .slider-card__body
+//      padding: 200px 10px
+//      min-height: 100vh
+//    .slider-card__button
+//      width: 100%
+

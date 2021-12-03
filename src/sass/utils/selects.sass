@@ -1,0 +1,79 @@
+
+
+.select
+	margin: 0 auto
+	position: relative
+	width: 250px
+	transition: all .2s ease-in-out
+	&.is-active .select__body
+		max-height: 500px
+		transform: scaleY(1)
+
+	&.is-active .select__item
+		max-height: 30px
+		min-height: 30px
+		transform: scaleY(1)
+
+
+.select__header
+	border: 1px solid #ccc
+	cursor: pointer
+	transition: all .2s ease-in-out
+
+.select__current
+	font-size: 20px
+	transition: all .2s ease-in-out
+
+.select__icon
+	align-items: center
+	display: flex
+	justify-content: center
+	height: 7px
+	text-align: center
+	width: 14px
+	position: absolute
+	right: 30px
+	top: 50%
+	transform: translate(0, -50%)
+	transition: all .2s ease-in-out
+	&.is-active
+		transform: translate(0, -50%) rotate(180deg)
+	svg
+		+pro
+
+
+.select__body
+	border-top: 0
+	max-height: 0
+	left: 0
+	position: absolute
+	right: 0
+	top: 100%
+	transition: all .2s ease-in-out
+	transform: scaleY(0)
+	transform-origin: top
+
+.select__item
+	cursor: pointer
+	max-height: 0
+	padding: 0
+	transition: all .2s ease-in-out
+	transform: scaleY(0)
+	transform-origin: top
+
+
+.select__body
+		background-color: white
+		border: solid 1px $active
+		border-top: solid 1px transparent
+.select__header
+		border: solid 1px $active
+		height: 64px
+
+.select__item
+		border-bottom: solid 1px $active
+		&:last-child
+			border-bottom: solid 1px transparent
+		&:hover
+			background-color: lighten($active, 20%)
+			color: white

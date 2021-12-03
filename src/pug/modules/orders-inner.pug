@@ -1,0 +1,34 @@
+section#orders.orders
+        .container
+            .orders__body
+                .orders__bunner
+                    .imgs
+                        img(src='assets/img/orders/i-1.webp', alt='img')
+                    a(href="#!").orders__photo
+                        svg
+                            use(xlink:href='/assets/img/sprite.svg#photo')
+                    a(href="#!").orders__avatar
+                        svg
+                            use(xlink:href='/assets/img/sprite.svg#avatar')
+                    .orders__name._w._w-700._f-30    Name
+                ul.orders__nav.orders-nav
+                    li.orders-nav__item.is_active
+                        a(href="#!")._f-20._b Mano užsakymai
+                    li.orders-nav__item
+                        a(href="#!")._f-20._b Mano adresai
+                    li.orders-nav__item
+                        a(href="#!")._f-20._b Mano produktai
+                    li.orders-nav__item
+                        a(href="#!")._f-20._b Mano paskyra
+
+                .orders__content
+                    .orders__title
+                        h2._f-30._w-700._a Mano užsakymai
+                    .orders__text._b._f-20 Patikrinkite užsakymus arba tęskite apsipirkimą.
+            .orders__info
+                p._f-25._w-700._a Jūsų užsakymai bus patalpinti čia.
+                a(href="#!" rel=".popup")._f-25._w-700._a.popups-init-js Apsipirkti.
+                button(type="button").btn.btn--success  Pridėti naują adresą
+
+
+      

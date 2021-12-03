@@ -1,0 +1,139 @@
+.calc
+	margin: 50px 0
+
+.calc__body
+	margin-top: 50px
+	display: grid
+	grid-template-columns: 663px 1fr
+	column-gap: 30px
+.calc__picture
+	position: relative
+	min-height: 516px
+.calc__column
+	color: #000000
+.calc__items
+	display: grid
+	grid-template-columns: repeat(5, fit-content(10px))
+	column-gap: 30px
+
+.calc__item
+	border-bottom: 1px solid #000
+	padding-bottom: 8px
+	span
+		padding: 0 10px 8px
+	&._active
+		span
+			font-size: 30px
+			color: $active
+			font-weight: 700
+
+.calc__title
+	h2
+		
+		color: $active
+
+.inc-decr
+	cursor: pointer
+	min-height: 50px
+	+alic
+.inc-decr__decr
+
+	display: inline-block
+	width: 20px
+	background-color: #7b6492
+	height: 1px
+.count
+	font-style: italic
+	+alic
+	margin: 0 30px
+.inc-decr__ink
+	display: inline-block
+	width: 20px
+	background-color: #7b6492
+	height: 1px
+	position: relative
+
+	&:after
+		content:   ""
+		background: #7b6492
+		position: absolute
+		width: 1px
+		height: 20px
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		z-index: 2
+
+.inc-decr__decr, .inc-decr__ink
+	margin: 10px 0 0 0
+
+
+.calc
+	&__sum
+		margin: 35px 0 0
+	&__description
+		margin: 23px 0 0
+		line-height: 1.2
+	&__info
+		margin: 40px 0 0 0
+	&__items
+		margin: 23px 0 0 0
+	&__kiekis
+		margin: 38px 0 0 0
+	&__inc-decr
+		margin: 8px 0 0 0
+
+.calc__form
+	margin: 55px 0 0 0
+.calc-form
+	display: grid
+	grid-template-columns: 410px 534px
+	column-gap: 76px
+
+
+.calc-form__col
+	+fdc
+	justify-content: space-between
+
+
+.calc-form__item
+	font-size: 25px
+	color: black
+	+fdc
+	input
+		border: solid 1px #7b6492
+		height: 50px
+		+alic
+		color: black
+		margin: 15px 0 0 0
+	textarea
+		border: solid 1px #7b6492
+		height: 175px
+		margin: 15px 0 0 0
+		padding: 0 0 0 15px
+
+.calc-form__btn
+	font-size: 25px
+	font-weight: 700
+	font-family: 'Cormorant Garamond', serif
+	height: 70px
+	border-radius: 0
+	margin: 50px 0 0 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

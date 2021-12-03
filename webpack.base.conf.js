@@ -115,11 +115,41 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      // hash: false,
       template: "src/pug/pages/index.pug",
       filename: "./index.html",
     }),
-   
+
+    new HtmlWebpackPlugin({
+      template: "src/pug/pages/lines.pug",
+      filename: "./lines.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "src/pug/pages/coupons.pug",
+      filename: "./coupons.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "src/pug/pages/services.pug",
+      filename: "./services.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "src/pug/pages/contacts.pug",
+      filename: "./contacts.html",
+    }),
+  new HtmlWebpackPlugin({
+      template: "src/pug/pages/registration.pug",
+      filename: "./registration.html",
+    }),
+new HtmlWebpackPlugin({
+      template: "src/pug/pages/orders.pug",
+      filename: "./orders.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "src/pug/pages/account.pug",
+      filename: "./account.html",
+    }),
+
     new CopyWebpackPlugin({
       patterns: [
         { from: "src/img", to: "assets/img" },

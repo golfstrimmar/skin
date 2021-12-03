@@ -1,0 +1,46 @@
+section#calc.calc
+    .calc__wrapper
+        .container
+            .calc__body
+                .calc__picture
+                    .imgs
+                        img(src='assets/img/coupons/i-1.webp', alt='img')
+                .calc__column
+                    .calc__title
+                        h2._f-50._w-400  eDovanų kuponas
+                    .calc__sum._f-35 30€
+                    .calc__description._f-25    Dovanų kuponas Jūsų draugui. Nustebinkite artimuosius puikia dovana - galimybe įsigyti Nauja oda kosmetiką arba procedūras. Geriausia dovana draugui! Kuponai yra Elektroniniai ir galioja 3 mėnesius.
+                    .calc__info._f-25._w-600 Suma *
+                    ul.calc__items
+                        li.calc__item._active
+                            span._f-25   30€
+                        li.calc__item
+                            span._f-25   50€
+                        li.calc__item
+                            span._f-25   60€
+                        li.calc__item
+                            span._f-25   80€
+                        li.calc__item
+                            span._f-25   100€
+                    .calc__kiekis._f-25._w-600   Kiekis
+                    .calc__inc-decr.inc-decr
+                        span.inc-decr__decr
+                        span.count._f-50._w-300    1
+                        span.inc-decr__ink
+            form.calc__form.calc-form
+                .calc-form__col
+                    label.calc-form__item   Gavėjo el. paštas *
+                        input(type="text" required)
+
+                    label.calc-form__item   Gavėjo vardas ir pavardė
+                        input(type="text" )
+
+                .calc-form__col.calc-form__col--last
+                    label.calc-form__item Žinutė
+                        textarea(name="text")
+
+                button(type="submit").btn.btn--success.calc-form__btn Pirkti
+
+
+      
+      

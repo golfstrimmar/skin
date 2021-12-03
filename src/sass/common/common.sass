@@ -1,15 +1,17 @@
 *
-  outline: 1px solid green
+  //outline: 1px solid green
   box-sizing: border-box
 
 body
   background: white
-  font-family: 'Poppins', sans-serif
+  //background: brown
+  font-family: 'Cormorant Garamond', serif
   font-style: normal
   font-weight: 500
-  font-size: 18px
+  font-size: 17px
   line-height: 1
-  color: #000000
+  color: #ffffff
+
   @media (min-width: 1000px) and (max-width: 1199px)
     font-size: 15px
   @media (max-width: 999px)
@@ -17,11 +19,11 @@ body
   
 
 .container
-  outline: 1px solid #4164ff
+  //outline: 1px solid #4164ff
 
 //------.container--------
 
-$containerWidth : 1230px
+$containerWidth : 1240px
 
 
 .container
@@ -39,34 +41,33 @@ $containerWidth : 1230px
     max-width: calc( 100% -  40px)
 
 
-
-
+button
+  background: transparent
 .wrapper
   overflow: hidden
   min-height: 100vh
 
 
-.bg
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center
+//.bg
+//  background-repeat: no-repeat
+//  background-size: cover
+//  background-position: center
 
 a
   display: block
   transition: all 0.2s ease-in-out
-  color: #000
-
+  color: #fff
   &:hover
-    color: $active
+    color: lighten($active,30%)
     cursor: pointer
 
-
-.lock
-  overflow: hidden
-.active
-  opacity: 1
-  visibility: visible
-  display: block
+//
+//.lock
+//  overflow: hidden
+//.active
+//  opacity: 1
+//  visibility: visible
+//  display: block
 
 
 
@@ -75,7 +76,8 @@ h1,h2,h3,h4, h5, h6
   display: inline-block
   margin: 0 auto
 
-
+button
+  font-family: 'Cormorant Garamond', serif
 
 img 
   opacity: 1
@@ -105,51 +107,51 @@ img[data-src]
 
 
 
-//  ---------------карточка на слайдере---------------------- 
-.object-card
-  position: relative
-  min-height: 300px
-
-
-// здесь задается высота слайдера!!!
-.object-card__body
-    position: relative
-    z-index: 2
-    +fdc
-    padding: 20px 10px
-    min-height: 300px
-
-.object-card__img
-  &:after  
-    content: ''
-    position: absolute
-    background: rgb(0,0,0,.4)
-    width: 100%
-    height: 100%
-    top: 0
-    left: 0
-
-
-.object-card__title 
-  text-align: center
-  padding: 0 0 20px 0
-  h3 
-    color: white
-
-    
-.object-card__text
-    color: white
-
-.object-card__button
-  margin: 10px 0 0 0
-  flex-grow: 1
-  +fdc
-  +juce
-  a
-    width: 100px
-    margin: 0 auto
-    height: 40px
-
-    
-svg
-  display: inline-block
+////  ---------------карточка на слайдере----------------------
+//.object-card
+//  position: relative
+//  min-height: 300px
+//
+//
+//// здесь задается высота слайдера!!!
+//.object-card__body
+//    position: relative
+//    z-index: 2
+//    +fdc
+//    padding: 20px 10px
+//    min-height: 300px
+//
+//.object-card__img
+//  &:after
+//    content: ''
+//    position: absolute
+//    background: rgb(0,0,0,.4)
+//    width: 100%
+//    height: 100%
+//    top: 0
+//    left: 0
+//
+//
+//.object-card__title
+//  text-align: center
+//  padding: 0 0 20px 0
+//  h3
+//    color: white
+//
+//
+//.object-card__text
+//    color: white
+//
+//.object-card__button
+//  margin: 10px 0 0 0
+//  flex-grow: 1
+//  +fdc
+//  +juce
+//  a
+//    width: 100px
+//    margin: 0 auto
+//    height: 40px
+//
+//
+//svg
+//  display: inline-block

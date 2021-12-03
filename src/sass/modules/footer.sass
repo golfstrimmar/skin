@@ -1,35 +1,104 @@
 .footer
-  margin: 100px 0 0 0
-  background: #3B3C3D
+  background-color: #9a5d87
   color: white
-  padding: 50px 0 20px 0
-  @media (min-width: 0px) and (max-width: 1199px)
-    margin: 6rem 0 0 0
+  padding: 54px 0 20px 0
+
 
 .footer__body
   display: grid
-  grid-template-columns: 31.9% 39.2% 1fr
-  @media (max-width: 1199px) 
-    grid-template-columns:  1fr
-  
+  grid-template-columns: 32.3% 11% 12.5% 1fr
+  column-gap: 80px
+
   
 .footer-item__property,.footer-item__line
-  margin: 0 0 10px 0
+  margin: 0 0 13px 0
 .footer-item__title-main
-  margin: 25px 0
+    margin: 38px 0 26px
+    font-weight: 400
+    line-height: 1.2
+    padding: 0 47px 0 0
+  
+.footer__item:last-child
+  position: relative
+.footer__item:nth-child(3), .footer__item:nth-child(4)
+    width: 130%
+    .footer-item__line
+      margin: 0 0 25px
+.footer-item__email
+  text-decoration: underline!important
+
+.footer-item__property
+  position: relative
+  input
+    font-family: 'Cormorant Garamond', serif
+    border-bottom: 1px solid white
+    height: 48px
+    padding: 0 0 0 0
+    &::placeholder
+      color: #fff
+      font-size: 20px
+      font-weight: 300!important
+  button
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0, -50%)
+    svg
+      width: 30px
+      height: 10px
+      fill: white
+      stroke: white
+      transition: all .2s ease-in-out
+    &:hover
+      svg
+        fill: darken($active, 20%)
+        stroke: darken($active, 20%)
 
 
-.footer-item__title
-  color: $active
+
+.footer-item__email
+  display: inline-block
+
+
+.footer__logo
+  font-weight: 300
+  
+
 
 .footer-item__tel,.footer-item__fax
   display: inline-block
   span
-    color: $active
     text-decoration: underline
 .footer-item__description
   margin: 14px 0 38px 0
 
 .footer__copyright
-  text-align: center
-  margin: -18px 0 0 0
+  +alic
+  margin: 58px 0 30px
+  span
+    margin: 0
+  a
+    margin: 0 30px 0 30px
+    &:last-of-type
+      margin: 0 0 0 12px
+.footer__soc
+  display: inline-flex
+  margin: -25px   0 0 auto
+
+
+
+
+.soc__item
+  width: 24px
+  height: 24px
+  margin: 0 20px  0 0!important
+  &:last-child
+      margin: 0 0 0 0!important
+  svg
+    +pro
+    fill: white
+    transition: all .2s ease-in-out
+  &:hover
+    svg
+      fill: lighten($active,20%)
+

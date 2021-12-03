@@ -1,0 +1,169 @@
+.catalog
+	margin-bottom: 50px
+
+.catalog__title
+	margin: 58px 0 0
+	text-align: center
+	h2
+		color: $active
+		font-family: 'Sarina', cursive
+
+.catalog__select
+	margin: 24px 0 0 auto
+
+	.select__item
+		color: #000
+		+alic
+	position: relative
+	width: 250px
+	z-index: 100
+	.select__header
+		+alic
+		color: #000
+	span.select__current
+		padding: 0 0 0 30px
+	.select__item
+		height: 30px
+		+alic
+		padding: 0 0 0 30px
+		&:hover
+			color: white
+
+.catalog__body
+	display: grid
+	grid-template-columns: 284px 1fr
+	column-gap: 60px
+	margin: -20px 0 0 0
+
+
+.shop__button--catalog
+	&.is-active
+		margin: 50px auto 0!important
+.cs__title
+	color: black
+	margin: 0 0 18px 0
+//------------------
+.catalog__content
+
+	.object-card
+		min-height: 313px
+		.object-card__text-block
+			column-gap: 0px
+		.object-card__img
+			min-height: 197px
+		.object-card__text
+			font-size: 16px
+			color: black
+		.object-card__price
+			font-size: 33px
+			font-weight: 600
+			color: black
+			margin: 0 0 0 0
+		.object-card__button-quickly
+			height: 40px
+			top: 157px
+		.object-card__button
+			min-height: 40px
+		.object-card__button--add
+			height: 40px
+		.object-card__prices
+			margin: 13px 0 4px
+		.object-card__price--delite
+			font-size: 21px
+			font-weight: 600
+			color: black
+			opacity: 0.5
+		&.not-active
+			min-height: 0
+			max-height: 0
+		&.is-active
+			min-height: 313px
+			max-height: 500px
+.catalog .shop__button
+	margin: -50px auto 0
+.shop__content--lines
+	grid-template-columns: repeat(auto-fill, 197px)
+	row-gap: 10px
+	margin: 70px 0 0 0
+
+//------------------
+
+.cs__tabs
+	position: relative
+
+
+.cs-tab
+	position: relative
+	border-top: 1px solid $active
+	&:last-child
+		border-bottom: 1px solid $active
+
+
+.cs-tab__title
+	height:  70px
+	+jucb
+	+alic
+	padding: 0
+	position: relative
+	span
+		transition: all .5s ease-in-out
+		color: $active
+	i
+		width:  20px
+		height: 1px
+		background-color: $active
+		transition: all .2s ease-in-out
+		position: relative
+		position: absolute
+		top: 50%
+		right: 0
+		transform: translate(0%, -50%)
+
+		&:after
+			content:   ""
+			background: $active
+			position: absolute
+			width: 1px
+			height: 20px
+			top: 0
+			right: 10px
+			transform: translate(0, -50%)
+			z-index: 2
+			transition: all .2s ease-in-out
+			opacity: 1
+		&.is-active
+			&:after
+				opacity: 0
+	cursor: pointer
+.cs-tab__hidden
+	transition: max-height .2s ease-in-out, transform .3s ease-in-out
+	position: relative
+	transform-origin: top
+	a
+		padding: 14px 0 0
+		color: #000000
+		font-size: 20px
+		&:first-child
+			padding-top: 0
+		&:last-child
+			padding-bottom: 20px
+
+
+
+.shop__button--catalog
+	margin: -4px auto 0!important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

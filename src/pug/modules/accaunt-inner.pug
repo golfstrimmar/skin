@@ -1,0 +1,62 @@
+section#accaunt.orders.accaunt
+    .container
+        .orders__body
+            .orders__bunner
+                .imgs
+                    img(src='assets/img/orders/i-1.webp', alt='img')
+                a(href="#!").orders__photo
+                    svg
+                        use(xlink:href='/assets/img/sprite.svg#photo')
+                a(href="#!").orders__avatar
+                    svg
+                        use(xlink:href='/assets/img/sprite.svg#avatar')
+                .orders__name._w._w-700._f-30    Name
+            ul.orders__nav.orders-nav
+                li.orders-nav__item.is_active
+                    a(href="#!")._f-20._b Mano užsakymai
+                li.orders-nav__item
+                    a(href="#!")._f-20._b Mano adresai
+                li.orders-nav__item
+                    a(href="#!")._f-20._b Mano produktai
+                li.orders-nav__item
+                    a(href="#!")._f-20._b Mano paskyra
+
+            .orders__content.accaunt__content.accaunt__content--first
+                .orders__title
+                    h2._f-30._w-700._a Mano paskyra
+                .orders__text._b._f-20 Žemiau galite peržiūrėti ir keisti savo asmens duomenis.
+
+            .orders__content.accaunt__content
+                .orders__title
+                    h2._f-30._w-700._a Vieša informacija
+                .orders__text._b._f-20 Jūsų profilio kortelė matoma visiems šios svetainės nariams
+                .orders__input
+                    input(type="text" placeholder="Rodomas vardas *" required)
+
+            .orders__content.accaunt__content
+                .orders__title
+                    h2._f-30._w-700._a Paskyra
+                .orders__text._b._f-20 Atnaujinkite ir keiskite su bendruomene bendrinamą informaciją
+                p.orders__text._b._f-20 Prisijungimo e. paštas:
+                p.orders__text._b._f-20    emailtest@mail.com
+                p.orders__text._b._f-20     Jūsų prisijungimo e. pašto pakeisti negalima
+                form.orders__form
+                    .orders__input
+                         input(type="text" placeholder="Vardas" )
+
+                    .orders__input
+                         input(type="text" placeholder="Pavardė" )
+
+                    .orders__input
+                         input(type="text" placeholder="E. paštas" )
+
+                    .orders__input
+                         input(type="text" placeholder="Telefonas" )
+                    .orders__buttons
+                        a(href="#!").orders__button-reset._f-15._w-700._a.btn   Atmesti
+                        a(href="#!").orders__button-refresh._f-15._w-700._w.btn Atnaujinti duomenis
+
+
+        //.orders__info
+        //    p._f-25._w-700._a Vieša informacija
+        //    a(href="#!" rel=".popup")._f-25._w-700._a.popups-init-js Apsipirkti.

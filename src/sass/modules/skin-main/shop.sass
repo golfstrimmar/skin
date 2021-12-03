@@ -1,0 +1,156 @@
+.shop
+	color: #000000
+	margin: 133px 0 0 0
+
+.shop__wrapper
+
+.shop__body
+
+.shop__select
+	position: relative
+	width: 250px
+	z-index: 100
+	.select__header
+		+alic
+	span.select__current
+		padding: 0 0 0 30px
+	.select__item
+		height: 30px
+		+alic
+		padding: 0 0 0 30px
+
+.shop__title-block
+	+alic
+	+jucb
+
+.shop__title
+	position: relative
+	h2
+		font-size: 20px
+		padding: 0 0 0 72px
+		letter-spacing: .12rem
+	&:after
+			content:   ""
+			background: $active
+			position: absolute
+			width: 42px
+			height: 2px
+			top: 50%
+			left: 0
+			transform: translate(0%,-50%)
+			z-index: 2
+
+
+.shop__content
+	display: grid
+	grid-template-columns: repeat(auto-fill, 273px)
+	//column-gap: 50px
+	row-gap: 25px
+	margin: 28px 0 0 0
+	justify-content: space-between
+.shop__card
+	transition: all .2s ease-in-out
+	transform-origin: top
+	&.not-active
+		transform: scaleY(0)
+		min-height: 0
+		max-height: 0
+	&.is-active
+		display: flex
+		min-height: 387px
+		max-height: 1000px
+		height: auto
+		transform: scaleY(1)
+
+
+.object-card
+	min-height: 387px
+	position: relative
+	+fdc
+.object-card__img
+	position: relative
+	width: 100%
+	min-height: 273px
+.object-card__cheap
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 2
+	width: 90px
+	height: 30px
+	background-color: #7b6492
+	+center
+	color: #fff
+	font-size: 17px
+	font-weight: 600
+	font-style: italic
+.object-card__text-block
+	text-align: center
+	margin: 11px 0 19px 0
+.object-card__text
+	font-size: 16px
+	font-weight: 600
+	line-height: 19px
+.object-card__price
+	font-size: 33px
+	font-weight: 600
+.object-card__button
+	width: 100%
+	min-height: 50px
+	border: solid 1px #7b6492
+	color: #7b6492
+	+center
+	margin: auto 0 0 0
+	&:hover
+		background: lighten($active,30%)
+		border: 1px solid darken($active,10%)
+		color: lighten($active,10%)
+.object-card__prices
+	+jucc
+	+alic
+	margin: 13px 18px 4px 22px
+.object-card__button-quickly
+	position: absolute
+	top: 204px
+	left: 0
+	z-index: 4
+	width: 100%
+	height: 70px
+	background: rgba(123, 100, 146, 0.8)
+	+center
+
+.object-card__button--add
+	height: 50px
+	background: #7b6492
+	color: #fff
+
+.object-card__price--delite
+	text-decoration: line-through
+	+alic
+	margin: 0 auto 0 0
+.shop__button
+	width: 320px
+	height: 70px
+	+center
+	border: solid 2px #7b6492
+	margin: 35px auto 0
+	color: #000000
+	transition: all .2s ease-in-out
+	span
+		text-align: center
+		font-size: 0
+	span.visible-span-js
+		font-size: 20px
+	&:hover
+		background: lighten($active,30%)
+		color: #fff
+
+	&.is-active
+		margin: 35px auto 0
+
+
+
+
+
+
+

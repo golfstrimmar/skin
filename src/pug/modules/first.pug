@@ -3,30 +3,33 @@ header.header
         .header__body
             a(href="#!").header__logo
                 //img(src='/assets/img/logo.svg')
-                img(data='assets/img/logo.svg', alt='img')
-                span Nauja Oda
+                img(src='assets/img/logo.svg', alt='img')
             nav.header__menu.menu
                 i.header__close
                     svg
                         use(xlink:href='/assets/img/sprite.svg#close')
                 ul.menu__list
                     li.menu__item
-                        a.menu__link(href="#!" rel="#bunner").button-scroll Pradžia
+                        a.menu__link(href="#!" rel="#bunner") Pradžia
                     li.menu__item
-                        a.menu__link(href="#!" rel="#posts").button-scroll E-shop
+                        a.menu__link(href="#!" rel="#posts") E-shop
                     li.menu__item
-                        a.menu__link(href="#!" rel="#galery").button-scroll Dovanų kuponai
+                        a.menu__link(href="#!" rel="#galery") Dovanų kuponai
                     li.menu__item
-                        a.menu__link(href="#!" rel="#galery").button-scroll Paslaugos
+                        a.menu__link(href="#!" rel="#galery") klinika
+
                     li.menu__item
-                        a.menu__link(href="#!" rel="#galery").button-scroll Procedūrų kainos
+                        a.menu__link(href="#!" rel="#galery") Paslaugos
                     li.menu__item
-                        a.menu__link(href="#!" rel="#galery").button-scroll Kontaktai
+                        a.menu__link(href="#!" rel="#galery") Procedūrų kainos
+                    li.menu__item
+                        a.menu__link(href="#!" rel="#galery") Kontaktai
 
 
             .header__info.info
-                a(href="#!").info__login Login
                 .info__decor
+                a(href="#!").info__login._f-20 Login
+
                 a(href="#!").info__cart.info-cart
                     svg
                         use(xlink:href='/assets/img/sprite.svg#cart')

@@ -1,22 +1,44 @@
 #popup.popup
     .popup__overlay
       .popup__inner
-          .form
+          .popup__title
+              h2._f-30._w-700._a    Pridėti naują adresą
+          form.popup__form
+              .jucb
+                 .form__item
+                   input#name(type='text' required='' placeholder=' Denzel Washington')
+                   label(for='name') *Vardas
+                 .form__item
+                   input#name-1(type='text' required='' placeholder=' Denzel Washington')
+                   label(for='name-1') *Pavardė
               .form__item
-                input#name(type='text' required='' placeholder=' Denzel Washington')
-                label(for='name') What is your name?
+                input#comp(type='email'  placeholder=' thebestmail@mail.com')
+                label(for='comp') Įmonės pavadinimas
               .form__item
-                input#email(type='email' required='' placeholder=' thebestmail@mail.com')
-                label(for='email') What is your email?
+                input#address(type='text'  placeholder=' Your awesome message')
+                label(for='address') Adresas
               .form__item
-                textarea#message(type='text' required='' placeholder=' Your awesome         message' cols=' 40' rows='6')
-                label(for='message') Write your message
-              .form__item.contacts__file-add
-                input#customFile.custom-file-input(type='file')
-                label.name__text(for='customFile') Add "attachment
-                .custom-file
+                input#address-1(type='text'  placeholder=' Your awesome message')
+                label(for='address-1') Adresas – 2 eilutė
               .form__item
-                input.submit-button.btn.btn--success(type='submit'  placeholder="Send message") 
+                input#Miestas(type='text'  placeholder=' Your awesome message')
+                label(for='Miestas') Miestas
+              p._f-20._w-300._b Šalis
+              p._f-20._w-300._b(style="margin: 16px 0 37px 0;")  Afganistanas
+              .jucb
+                    .form__item
+                        input#Miestas(type='text'  placeholder=' Your awesome message')
+                        label(for='Miestas') Pašto kodas
+                    .form__item
+                        input#Miestas(type='text'  placeholder=' Your awesome message')
+                        label(for='Miestas') Telefonas
+              .form__checkbox
+                  input(type="checkbox" )#place
+                  label(for='place')._f-15._w-300 Nustatyti kaip numatytąjį adresą
+              .form__item.form__item--buttons
+                button.submit-button.btn.btn--success(type='submit'  )._f-20    Pridėti adresą
+                button(type="text" )._f-20._w-700._a Atšaukti
+
           i.popup__close.popup__close
               svg
                 use(xlink:href='/assets/img/sprite.svg#close')

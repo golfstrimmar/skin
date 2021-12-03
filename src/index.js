@@ -19,8 +19,10 @@ import './js/popup'
 import './js/MySwiper'
 // import './js/form-js'
 // import "./js/polzunki";
-// import "./js/tabs";
-import "./js/lazy";
+import "./js/tabs";
+// import "./js/lazy";
+import "./js/select";
+import "./js/button-more";
 // import './css/fonts.css'
 import './sass/style.sass';
 

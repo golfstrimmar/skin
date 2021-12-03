@@ -6,8 +6,7 @@
   transition: all 0.2s ease-in-out
   position: fixed
   width: 100%
-  height: 80px
-  background: rgba(245,245,245,1)
+  height: 130px
   +alic
   @media (min-width: 1000px) and (max-width: 1199px)
     height: 60px
@@ -21,8 +20,8 @@
 .responciveHeader
   position: fixed
   width: 100%
-  height: 60px
-  background: rgba(245,245,245, .9)
+  height: 100px
+  background: rgba(0,0,0, .7)
 
 
 // =======================================================
@@ -31,11 +30,11 @@
   position: relative
   height: 100%
   display: grid
-  grid-template-columns: 100px 1fr minmax(340px, auto)
-  @media (min-width: 1000px) and (max-width: 1199px)
-    grid-template-columns: 100px 1fr minmax(260px, auto)
-  @media (max-width: 999px)
-    grid-template-columns: 100px 1fr
+  grid-template-columns:  1fr minmax(112px, auto)
+  //@media (min-width: 1000px) and (max-width: 1199px)
+  //  grid-template-columns: 100px 1fr minmax(260px, auto)
+  //@media (max-width: 999px)
+  //  grid-template-columns: 100px 1fr
 
 //-------------
 .header__burger
@@ -71,32 +70,38 @@
 
 //------определяет высоту header -------
 .header__logo
+  +alic
+  position: absolute
+  top: 36%
+  left: 45.3%
+  transform: translate(-50%, -50%)
+  z-index: 5
   svg
-    height: 40px
-    width: 40px
+    height: 75px
+    width: 66px
+
 
 //  -------------------   
 .header__menu
-  margin: 0 30px 0 0
   position: relative
-  @media (min-width: 1000px) and (max-width: 1199px)
-    margin: 0 20px 0 0
-  @media (max-width: 999px)
-    width: 100vw
-    min-height: 100vh
-    position: fixed
-    top: 0
-    transform: translateX(-100vw)
-    left: 0
-    padding: 100px 20px 0 20px
-    overflow: auto
-    text-align: right
-    +fdc
-    +jucs
-    +alie
-    background: rgba(0,0,0,  .95)
-    z-index: 1000
-    transition: all 0.2s ease-in-out
+  //@media (min-width: 1000px) and (max-width: 1199px)
+  //  margin: 0 20px 0 0
+  //@media (max-width: 999px)
+  //  width: 100vw
+  //  min-height: 100vh
+  //  position: fixed
+  //  top: 0
+  //  transform: translateX(-100vw)
+  //  left: 0
+  //  padding: 100px 20px 0 20px
+  //  overflow: auto
+  //  text-align: right
+  //  +fdc
+  //  +jucs
+  //  +alie
+  //  background: rgba(0,0,0,  .95)
+  //  z-index: 1000
+  //  transition: all 0.2s ease-in-out
 
 
 
@@ -106,46 +111,58 @@
     transform: translateX(0)
 
 .menu__list
-  +alic
-  +jucb
+  //+alic
+  //+jucb
   height: 100%
-  @media (max-width: 999px)
-    +fdc
-    +alie
+  width: 100%
+  display: grid
+  align-items: center
+  grid-template-columns: repeat(4,min-content) 1fr auto auto
+  //justify-content: start
+  column-gap: 25px
+  //row-gap:
+  //@media (max-width: 999px)
+  //  +fdc
+  //  +alie
     
 .menu__item
-  +alic
+  white-space: nowrap
   height: 100%
-  border: 1px solid transparent
-  margin: 0 10px 0 0
-  &:last-child
-    margin: 0 0 0 0
+  &:nth-child(5)
+    justify-self: end
+  &:nth-child(7)
+    justify-self: end
+    margin: 0 25px 0 0
 
-  @media (max-width: 999px)
-    margin: 0 0 20px 0
-    width: 100%
-    &:last-child
-      margin: 0 0 30px 0
+  //@media (max-width: 999px)
+  //  margin: 0 0 20px 0
+  //  width: 100%
+  //  &:last-child
+  //    margin: 0 0 30px 0
     
 .menu__link
   +alic
   height: 100%
-  padding: 0 5px
   transition: all .2s ease-in-out
+  color: #fff
+  text-transform: uppercase
+  font-size: 15px
   &:hover
-    color: white
-    background: lighten($active,30%)
-    box-shadow: 0px 0px 20px lighten($active,60%)!important
-  &:focus
-    border: 1px solid darken($active,10%)!important
-    background: lighten($active,10%)
-    box-shadow: 0 0 20px lighten($active,60%)!important
-    color: white
-  @media (max-width: 999px)
-    color: white
-    border-radius: 10px
-    padding: 5px
-    background: transparent
+    color: lighten($active,30%)
+    //text-shadow: 0 0 20px white!important
+    text-shadow: 0 0 3px white
+    //background: lighten($active,30%)
+    //box-shadow: 0px 0px 20px lighten($active,60%)!important
+  //&:focus
+    //border: 1px solid darken($active,10%)!important
+    //background: lighten($active,10%)
+    //box-shadow: 0 0 20px lighten($active,60%)!important
+    //color: $active
+  //@media (max-width: 999px)
+  //  color: white
+  //  border-radius: 10px
+  //  padding: 5px
+  //  background: transparent
   
 
 .menu__link--active
@@ -223,14 +240,34 @@
     input[ type = "text"]
       width: 100%
 
-
+.info__login
+  font-size: 17px
+  color: #fff
 
 .info-cart
+  position: relative
   svg
     width: 32px
     height: 27px
+    fill: #fff
+    transition: all .2s ease-in-out
+  &:hover
+    svg
+      fill: lighten($active,20%)
+    span
+      color: lighten($active,20%)
+      text-shadow: 0 0 3px white
+  span
+    color: #fff
+    font-family: 'Nunito', sans-serif
+    position: absolute
+    top: -18px
+    right: -14px
+    transition: all .2s ease-in-out
+
+
 
 .info__decor
   width: 2px
   height: 33px
-  background: red
+  background: white
