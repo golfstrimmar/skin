@@ -44,3 +44,101 @@
 	border-bottom: 1px solid $active
 	padding: 4px 0 21px 0
 
+//============
+.popup__inner--cart
+	position: absolute
+	padding: 0 0 0 0
+	width: 410px
+	min-height: 100vh
+	right: 0
+	top: 0
+	margin: 0 0 0 0
+	+fdc
+.popup__title--cart
+	position: relative
+	height: 140px
+	background-color: #7b6492
+	+alic
+	padding: 0 0 0 90px
+	h2
+		margin: 0 0 0 0
+.cart__close
+	left: 30px
+	top: 50%
+	right: auto
+	transform: translate(0, -50%)
+	width: 20px
+	height: 34px
+.cart__close svg
+	transform: rotate(180deg)
+	fill: white
+	width: 20px
+	height: 34px
+	
+	
+
+.cart__button
+	background-color: #7b6492
+	height: 70px
+	width: 100%
+	//margin: auto 0 0 0
+.cart__card
+	width: 270px
+	margin: 35px 0 0 30px
+	padding: 0 15px 0 0
+.cart-card
+	display: grid
+	grid-template-columns: 100px 1fr
+	column-gap: 15px
+	position: relative
+
+.cart__info, .cart__sum
+	padding: 0 0 0 30px
+.cart__info
+	margin: auto 0 10px 0
+.cart__sum
+	margin: 0 0 50px 0
+
+.cart-card__img
+	position: relative
+	width: 100px
+	height:  100px
+.cart-card__prices
+	+jucb
+	+alic
+	margin: 17px 0 0 0
+.cart-card__price-del
+	text-decoration: line-through
+	opacity: 0.5
+	
+.cart-card__close
+	width: 20px
+	height:  20px
+	position: absolute
+	right: 0px
+	top: -20px
+	+center
+	svg
+		+pro
+		fill: $active
+.cart__inc-decr
+	.count
+		font-size: 30px
+		margin: 4px 20px 0
+	.inc-decr__decr,.inc-decr__ink
+		width: 13px
+	.inc-decr__ink:after
+		height: 13px
+
+
+
+
+
+
+
+
+
+
+
+
+

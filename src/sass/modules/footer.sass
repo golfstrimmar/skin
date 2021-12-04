@@ -101,4 +101,22 @@
   &:hover
     svg
       fill: lighten($active,20%)
+@media (min-width: 768px) and (max-width: 999px)
+    .footer__item:nth-child(3), .footer__item:nth-child(4)
+      width: auto
+    .footer__body
+      grid-template-columns:  1fr 1fr
 
+@media (max-width: 767px)
+  .footer__body
+    grid-template-columns:   1fr
+  .footer__item:nth-child(3), .footer__item:nth-child(4)
+      width: auto
+  .footer__copyright
+    flex-direction: column
+    align-items: start
+  .footer__soc
+    margin: 25px 0
+    order: -1
+  .footer__copyright a, .footer__copyright span, .footer__copyright a:last-of-type
+    margin: 20px 0 0 0

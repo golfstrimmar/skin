@@ -34,6 +34,7 @@ const Popup = (cell) => {
     });
 
     overlay.addEventListener('click',(e) =>{
+        console.log("overlay");
         if (e.target.classList.contains("popup__overlay")) {
             popup.animate([
                 { opacity:  '1' },
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const popupsInit = document.querySelectorAll('.popups-init-js ')
     if(popupsInit){
         popupsInit.forEach((cell)=>{
+
             cell.addEventListener('click',(e) => {
                 const modals = document.querySelectorAll('.popups ')
                 if (modals){

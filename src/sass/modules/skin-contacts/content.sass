@@ -78,7 +78,17 @@
 	iframe
 		width: 100%
 
+@media (max-width: 767px)
+	.contacts__column p
+		font-size: 18px
+		
+	.contacts__form
+		grid-template-columns: 1fr
+		column-gap: 0
 
-
+	.contacts-form__item--long, .contacts-form__button
+		grid-column: 1/2
+	.contacts-form__button
+		width: 100%
 
 

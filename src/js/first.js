@@ -2,7 +2,7 @@
 // import $ from "jquery";
 // ------------------------------------------------
 
-import {initPopupCommon} from "./popup";
+// import {initPopupCommon} from "./popup";
 
 const Header = () => {
   const burger =   document.querySelector('.header__burger');
@@ -11,13 +11,7 @@ const Header = () => {
 
   burger.addEventListener('click', function (event) {
   menu.classList.add("menu-active");
-  info.classList.add("header__info", "info");
-  info.innerHTML = "<a class='info_phone' href='#!'>+7(000) 123 45 65</a><div class='info_search '><input type='text' placeholder='Поиск' /><svg> <use xlink:href='/assets/img/sprite.svg#search'></use></svg><input type='submit'/></div>"
-  menu.append(info);
-  function activeInfo() {
-  info.classList.add("info-active")
-  }
-  setTimeout(activeInfo, 200);
+
   document.querySelector("body").classList.add("lock");
   });
 
@@ -25,8 +19,6 @@ const Header = () => {
 
 document.querySelector('.header__close').addEventListener('click', function (event) {
   menu.classList.remove("menu-active");
-  menu.querySelector('.info').remove();
-  info.classList.remove("info-active");
   document.querySelector('body').classList.remove("lock");
 });
 
@@ -45,13 +37,10 @@ document.querySelector('.header__close').addEventListener('click', function (eve
 
 // ---------------------------------------------
 window.onresize = function () {
-  if (window.innerWidth >= 999) {
-    if(menu.querySelector('.header__info')){
-      menu.querySelector('.header__info').remove();
-    }
+  if (window.innerWidth >= 1199) {
+
 
     menu.classList.remove("menu-active");
-    document.querySelector('.info').classList.remove("info-active");
     document.querySelector('body').classList.remove("lock");
   }
   }

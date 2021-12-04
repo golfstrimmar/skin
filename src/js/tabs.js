@@ -1,15 +1,15 @@
 'use ctrict'
 
     const MyTabs = () => {
-        let tabs = document.querySelector('.tabs-container-js');
+        let tabs = document.querySelectorAll('.tabs-container-js');
+        tabs.forEach((cell)=>{
+            let singles = Array.prototype.slice.call(cell.children);
 
-
-        let singles = Array.prototype.slice.call(tabs.children);
-        singles.forEach((cell) => {
-            let title = cell.querySelector('.tab-title-js')
+        singles.forEach((c) => {
+            let title = c.querySelector('.tab-title-js')
             let span = title.querySelectorAll(' span');
-            let hidden = cell.querySelector('.tab-hidden-js');
-            let svg = cell.querySelector('.tab-title-js i');
+            let hidden = c.querySelector('.tab-hidden-js');
+            let svg = c.querySelector('.tab-title-js i');
             hidden.style.cssText = " transform: scaleY(0);  transition:  all 0s ease-in-out"
             hidden.style.height = `0px`
             function openItems(e) {
@@ -44,11 +44,15 @@
             title.addEventListener('click', openItems)
 
         })
-
+        })
 
     };
 document.addEventListener('DOMContentLoaded', function(){
-    MyTabs();
+    const tabs = document.querySelectorAll('.tabs-container-js ');
+    if(tabs.length){
+        MyTabs();
+    }
+
 });
 
 

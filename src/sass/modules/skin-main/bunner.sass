@@ -86,6 +86,8 @@
         font-size: 20px
         font-weight: 700
         font-family: 'Cormorant Garamond', serif
+        @media (max-width: 767px)
+          font-size: 17px
     button
       width: 20px
       height:  20px
@@ -96,7 +98,15 @@
       svg
         fill: white
         +pro
+      @media (max-width: 767px)
+        width: 17px
+        height: 17px
+        right: -7px
+        top: 51%
+    @media (max-width: 767px)
+      width: 100%
 
+        
 
 .rec
   margin: 30px 0 0 0
@@ -114,10 +124,17 @@
   top: 0
   margin: 0 110px 0 auto
 
+  @media  (max-width: 1457px)
+      opacity: .4
+
+
+
 
 .rec__text
   text-align: center
   padding: 0 0 0 58px
+  position: relative
+  z-index: 2
   p
     line-height: 1.45
     white-space: nowrap
@@ -139,18 +156,31 @@
     transform: rotate(180deg) translateY(+50%)
 
 
+@media (min-width: 768px) and (max-width: 1355px)
+  .bunner-slider .swiper-pagination
+    left: 30px
 
-//
-//@media (min-width: 500px) and (max-width: 999px)
-//  .bunner-slider
-//    .slider-card__body
-//      padding: 200px 10px
-//      min-height: 100vh
-//@media (max-width: 500px)
-//  .bunner-slider
-//    .slider-card__body
-//      padding: 200px 10px
-//      min-height: 100vh
-//    .slider-card__button
-//      width: 100%
+@media (max-width: 767px)
+  .bunner-slider .slider-card__button
+    width: 100%
+  .rec__img
+      margin: 0 0 0 auto
+      width: 100%
+  .bunner-slider .swiper-pagination
+    left: 20px
+  .rec__text
+    padding: 0 20px
+  .rec__text p
+    white-space: normal
+  .slider--1 .content-slider-arrow
+    transform: translate(-50%, -50%)
+    width: 50px
+    height: 50px
+    top: 110%
+  .slider--1 .content-slider-prev
+    left: calc(50% - 40px)
+  .slider--1 .content-slider-next
+    left: calc(50% + 40px)
+    transform: translate(-50%, -50%) rotate(180deg)
+
 

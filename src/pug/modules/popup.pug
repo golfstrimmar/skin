@@ -1,4 +1,4 @@
-#popup.popup
+#popup.popup.popups
     .popup__overlay
       .popup__inner
           .popup__title
@@ -42,3 +42,33 @@
           i.popup__close.popup__close
               svg
                 use(xlink:href='/assets/img/sprite.svg#close')
+
+
+.popups.cart.popup
+    .popup__overlay
+        .popup__inner.popup__inner--cart
+            .popup__title.popup__title--cart
+                h2._f-30._w-700._w  Mano krepšelis
+                i.popup__close.popup__close.cart__close
+                    svg
+                        use(xlink:href='/assets/img/sprite.svg#arrow-left')
+            .cart__card.cart-card
+                a(href="#!").cart-card__img
+                    .imgs
+                        img(src='assets/img/main/i-5.webp', alt='img')
+                .cart-card__content
+                    .cart-card__title._f-12._w-600._a SESDERMA HIDRADERM AVIŽŲ-ROŽIŲ VANDUO, 200 ml
+                    .cart-card__prices
+                        .cart-card__price._f-25._w-600._a 11,05 €
+                        .cart-card__price-del._f-20._w-600._a 13,00 €
+                    .cart__inc-decr.calc__inc-decr.inc-decr
+                        span.inc-decr__decr
+                        span.count._f-50._w-300._a    1
+                        span.inc-decr__ink
+                .cart-card__close
+                    svg
+                        use(xlink:href='/assets/img/sprite.svg#close')
+
+            .cart__info._f-30._w-700._a Tarpinė suma
+            .cart__sum._f-40._w-700._a 11,05 €
+            a(href="#!").btn.btn--success.cart__button._f-20._w-700 Peržiūrėti krepšelį
