@@ -43,12 +43,13 @@ section#reg-form.reg-form
                         input(type="text" placeholder="Slaptažodis")
                 .reg-form__button(type="button").btn.btn--success._f-28._w-600 Registruotis e. paštu
                 .reg-form__dev._f-20._b arba užsiregistruokite su
-                a(href="#!").reg-form__block
-                    svg
-                        use(xlink:href='/assets/img/sprite.svg#facebook-blue')
-                a(href="#!").reg-form__block
-                    svg
-                        use(xlink:href='/assets/img/sprite.svg#google')
+                .reg-form__blocks
+                    a(href="#!").reg-form__block
+                        svg
+                            use(xlink:href='/assets/img/sprite.svg#facebook-blue')
+                    a(href="#!").reg-form__block
+                        svg
+                            use(xlink:href='/assets/img/sprite.svg#google')
             .reg-form__info.reg-form__info
                     span._f-20._b Registruodamiesi sutinkate su mūsų&nbsp;
                     a(href="#!")._w-600._a._f-20   Naudojimo sąlygos

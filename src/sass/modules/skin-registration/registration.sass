@@ -1,5 +1,6 @@
 .reg
-	margin: 206px 0 0 0
+	+center
+	min-height: 1024px
 	*
 		color: black
 
@@ -69,7 +70,8 @@
 
 //===========
 .reg-form
-	padding: 206px 0 200px 0
+	+center
+	min-height: 1024px
 
 .reg-form__body
 	width: 400px
@@ -141,12 +143,24 @@
 	&:last-of-type
 		margin: 30px 0 0 0
 
+.reg-form__blocks
+	display: flex
 
 
+@media (max-width: 767px)
+	.reg__body,.reg-form__body
+		+fdc
+		+alic
+		width: 100%
+	.reg__block
+		width: 100%
+	.reg__block a
+		width: 100%
+	.reg__dev:after, .reg__dev:before
+		width: 34%
 
-
-
-
+	.reg-form__dev:after, .reg-form__dev:before
+		width: 20%
 
 
 
